@@ -1,0 +1,87 @@
+/* Posts.css */
+
+/* Multi-color faded background */
+.posts-container {
+    background: linear-gradient(135deg, #007bff, #6a11cb, #2575fc, #ff6a00, #ee0979);
+    background-size: 400% 400%; /* Ensures smooth transition of colors */
+    animation: gradient-animation 15s ease infinite; /* Animation for moving gradient */
+    padding: 20px;
+    min-height: 100vh;
+    color: white;
+}
+
+/* Keyframes for background animation */
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Header styling */
+.posts-header {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+/* Buttons styling */
+.logout-button, .add-button, .edit-button, .delete-button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect */
+.logout-button:hover, 
+.add-button:hover, 
+.edit-button:hover, 
+.delete-button:hover {
+    background-color: #003d80;
+    transform: scale(1.05);
+}
+
+/* Individual post items */
+.post-item {
+    background-color: #ffffff;
+    color: #333;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Post title styling */
+.post-title {
+    font-size: 1.75rem;
+    margin-bottom: 15px;
+    color: #0056b3;
+}
+
+/* Post content */
+.post-content {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Author text */
+.post-author {
+    font-style: italic;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+/* Edit and delete buttons styling */

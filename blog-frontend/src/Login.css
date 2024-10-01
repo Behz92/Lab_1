@@ -1,0 +1,98 @@
+/* Login.css */
+
+/* Multi-color faded background */
+.login-container {
+    background: linear-gradient(135deg, #007bff, #6a11cb, #2575fc, #ff6a00, #ee0979);
+    background-size: 400% 400%; /* Ensures smooth transition of colors */
+    animation: gradient-animation 15s ease infinite; /* Animation for moving gradient */
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* Keyframes for background animation */
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Header styling */
+.login-header {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px; /* Set a width for the form */
+}
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.login-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.password-toggle svg {
+    width: 24px;
+    height: 24px;
+    color: #999;
+    transition: color 0.3s ease;
+}
+
+.password-toggle:hover svg {
+    color: #333;
+}
+
+
+/* Buttons styling */
+.login-button, .signup-button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect */
+.login-button:hover, 
+.signup-button:hover {
+    background-color: #003d80;
+    transform: scale(1.05);
+}
